@@ -43,6 +43,17 @@ You can use this application to see details about Harry Potter characters and al
 
 - **Character Details**: View complete character details, including wand, ancestry, and more.
 
+## Deployment 
+
+URL : https://101416014-lab-tets2-comp3133.vercel.app/
+
+## ScreenShots 
+
+<img width="1710" alt="Screenshot 2025-04-03 at 2 35 38 PM" src="https://github.com/user-attachments/assets/37eb1e13-5d44-4230-9408-3ce85578ab35" />
+
+<img width="1710" alt="Screenshot 2025-04-03 at 2 35 56 PM" src="https://github.com/user-attachments/assets/7f3297a0-37ed-48a7-b7d3-a6cb0219d9cd" />
+
+<img width="1710" alt="Screenshot 2025-04-03 at 2 36 22 PM" src="https://github.com/user-attachments/assets/03a01388-daaa-4b4f-b29d-1fcd80258129" />
 
 
 
