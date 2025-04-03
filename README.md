@@ -1,16 +1,25 @@
-# 101416014 LabTest2 Comp3133
+## 101416014 - Lab Test 2 (COMP 3133)
+This Angular application allows users to explore a list of Harry Potter characters, filter them by Hogwarts Houses, and view detailed information about each character.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+🚀 Deployed on Vercel: 101416014-lab-tets2-comp3133.vercel.app
 
-## Description
+📌 Project Description
+This project was built as part of the COMP 3133 Lab Test 2. The application fetches data from a Harry Potter API and displays characters in a visually appealing format using Angular Material. Users can:
 
-You can use this application to see details about Harry Potter characters and also filter by houses.
+Browse character names, houses, and actors.
+
+Filter characters by Hogwarts houses.
+
+View detailed information including wand, ancestry, and more.
 
 ## Technologies Used
+Angular CLI v19.2.5 – Framework used to build the application.
 
-- **Angular**: Framework used to build the application.
-- **Angular Material**: For UI components.
-- **Vercel**: Deployment platform.
+Angular Material – For modern and responsive UI components.
+
+Vercel – Platform for seamless deployment.
+
+
 
 ## Installation
 
@@ -58,10 +67,6 @@ URL : https://101416014-lab-tets2-comp3133.vercel.app/
 
 
 
-
-## Pourpose
-
-This application was created for academic porpuse for George Brown College
 
 
 
