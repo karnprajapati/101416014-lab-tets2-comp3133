@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+    Character Details
+    <span class="spacer"></span>
+    <a mat-button routerLink="/">Back to All characters</a>
+  </mat-toolbar>
+  
+  <ng-container *ngIf="character; else loading">
+    <mat-card class="details-card">
+      <div class="character-wrapper">
+        <img
+          [src]="character.image || 'https://via.placeholder.com/300x400?text=No+Image'"
+          alt="{{ character.name }}"
+          class="character-image"
+        />
+  
+        <mat-card-content class="character-info">
+          <h2>{{ character.name }}</h2>
+          <p><strong>Species:</strong> {{ character.species }}</p>
+          <p><strong>House:</strong> {{ character.house || 'No House' }}</p>
+          <p><strong>Wizard:</strong> {{ character.wizard ? 'Yes' : 'No' }}</p>
+          <p><strong>Ancestry:</strong> {{ character.ancestry || 'Unknown' }}</p>
+  
+          <p><strong>Wand:</strong></p>
+          <ul>
+            <li><strong>Wood:</strong> {{ character.wand.wood || 'N/A' }}</li>
+            <li><strong>Core:</strong> {{ character.wand.core || 'N/A' }}</li>
+            <li><strong>Length:</strong> {{ character.wand.length || 'N/A' }} inches</li>
+          </ul>
+  
+          <p><strong>Actor:</strong> {{ character.actor }}</p>
+        </mat-card-content>
+      </div>
+    </mat-card>
+  </ng-container>
+  
+  <ng-template #loading>
+    <p style="padding: 20px;">Loading character details...</p>
+  </ng-template>
+  

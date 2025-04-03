@@ -1,0 +1,34 @@
+.details-card {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .character-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .character-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  
+  .character-info {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  mat-toolbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  

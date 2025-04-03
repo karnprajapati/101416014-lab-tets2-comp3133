@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+  <h1>Harry Potter Characters</h1>
+</mat-toolbar>
+
+<div class="filter-section">
+  <div class="filter-header">
+    <h2>Filter by House</h2>
+    <button mat-raised-button color="warn" 
+            *ngIf="selectedHouse" 
+            (click)="clearFilter()">
+      Clear Filter
+    </button>
+  </div>
+
+  <div class="filter-form">
+    <mat-form-field appearance="outline">
+      <mat-label>Select House</mat-label>
+      <mat-select [(value)]="selectedHouse" (selectionChange)="filterByHouse()">
+        <mat-option *ngFor="let house of houses" [value]="house">
+          {{ house }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="active-filter" *ngIf="selectedHouse">
+    Currently showing: <strong>{{ selectedHouse }}</strong>
+  </div>
+</div>
+
+<div class="container">
+  <div class="character-grid">
+    <a
+      *ngFor="let character of characters"
+      [routerLink]="['/character', character.name]"
+      style="text-decoration: none;"
+    >
+      <mat-card class="character-card">
+        <img
+          mat-card-image
+          [src]="character.image || 'https://via.placeholder.com/300x400?text=No+Image'"
+          alt="{{ character.name }}"
+        />
+        <mat-card-title>{{ character.name }}</mat-card-title>
+        
+        <mat-card-subtitle [ngClass]="'house-' + character.house">
+          {{ character.house || 'No House' }}
+        </mat-card-subtitle>
+        
+        <mat-card-content>
+          <p><strong>Actor:</strong> {{ character.actor }}</p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </div>
+</div>
